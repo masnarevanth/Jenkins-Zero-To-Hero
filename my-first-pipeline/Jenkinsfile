@@ -9,4 +9,12 @@ pipeline {
       }
     }
   }
+  
+  }
+  stages {
+    stage('Test') {
+      steps {
+        sh 'touch f1'
+      }
+  }
 }
