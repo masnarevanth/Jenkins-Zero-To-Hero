@@ -7,6 +7,12 @@ pipeline {
       steps {
         sh 'node --version'
       }
+   }
+    stages {
+    stage('file creation') {
+      steps {
+        sh 'touch f1'
+      }
     }
-  }
+  }  
 }
